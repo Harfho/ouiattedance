@@ -1,0 +1,88 @@
+{% load static %}
+
+{% block style %}
+  <link rel="preload" as="style"href="{% static 'teacherregisterstyle.css' %}">
+  <link rel="stylesheet" href="{% static 'teacherregisterstyle.css' %}">
+{% endblock style %}
+    <!-- TITLE -->
+{% block title %}
+      <title>Register</title>
+{% endblock title %}
+       <div class="back">
+      <p>Back</p>
+    </div>
+    
+{% block main %}
+  <main role="main">
+      <section class="ui-section-content">
+        <div class="ui-layout-container">
+      
+          <div class="ui-layout-column-6 ui-layout-column-center">
+              <div class="ui-component-cta ui-layout-flex">
+            <div class="input-container">
+              <input type="email" class="input" placeholder="username">
+            </div>
+            <div class="option">
+              <select class="option-container" placeholder="data">
+                <option value="100LEVEL">Biochemistry</option>
+                <option value="100LEVEL">Computer Science</option>
+                <option value="100LEVEL">Physics</option>
+                <option value="100LEVEL">Industrial Chemistry</option>
+                <option value="100LEVEL">Micro Biology</option>
+              </select>
+            </div>
+            <div class="option1">
+              <select class="option-container1">
+                <option value="100LEVEL">100Level</option>
+                <option value="100LEVEL">200Level</option>
+                <option value="100LEVEL">300Level</option>
+                <option value="100LEVEL">400Level</option>
+                <option value="100LEVEL">500Level</option>
+              </select>
+            </div>
+
+
+
+
+
+
+<div class="password">
+
+      <div class="ui-component-cta ui-layout-flex">
+            <div class="input-contain">
+              <input type="password" class="input" placeholder="password">
+            </div>
+            
+            </div>
+      <div class="ui-component-cta ui-layout-flex">
+            <div class="input-contain">
+              <input type="password" class="input" placeholder="confirm password">
+            </div>
+            
+            </div>
+            </div>
+   
+            
+          </div>
+       
+   
+             </div>
+          </div>
+        </div>
+ 
+    </main>
+     <a href="#">
+          <span>Login</span>
+          <div class="liquid"></div>
+         
+      </a>
+      
+          
+      <script>
+        document.querySelectorAll('.input-container[data-error] .input').forEach(inpEl => {
+inpEl.addEventListener('input', () => inpEl.parentElement.removeAttribute('data-error'));
+        });
+      </script>
+{% endblock main %} 
+    
+</html>

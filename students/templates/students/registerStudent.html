@@ -1,0 +1,60 @@
+{% extends "teachers/base.html" %}
+{% load static %}
+
+{% block style %}
+  <link rel="preload" as="style" href="{% static 'studentloginstyle.css' %}">
+  <link rel="stylesheet" href="{% static 'studentloginstyle.css' %}">
+    
+{% endblock style %}
+
+      <!-- TITLE -->
+  {% block title %}
+    <title>student registration</title>
+    
+  {% endblock title %}
+
+{% block main %}
+    <main role="main">
+      <section class="ui-section-content">
+        <div class="ui-layout-container">
+      
+          <div class="ui-layout-column-6 ui-layout-column-center">
+              <div class="ui-component-cta ui-layout-flex">
+            <div class="input-container">
+              <input type="email" class="input" placeholder="username">
+            </div>
+                <div class="ui-component-cta ui-layout-flex">
+            <div class="input-container">
+              <input type="text" class="input" placeholder="Matric Number">
+            </div>
+            
+            </div>
+      <div class="ui-component-cta ui-layout-flex">
+            <div class="input-container">
+              <input type="password" class="input" placeholder="password">
+            </div>
+            
+            </div>
+      <div class="ui-component-cta ui-layout-flex">
+            <div class="input-container">
+              <input type="password" class="input" placeholder="confirm password">
+            </div>
+            
+            </div>
+   
+            
+          </div>
+       
+   
+             </div>
+          </div>
+        </div>
+ 
+    </main>
+     <a href="#">
+          <span>Register</span>
+          <div class="liquid"></div>
+         
+      </a>
+      
+{% endblock main%}

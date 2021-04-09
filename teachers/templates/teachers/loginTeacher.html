@@ -1,0 +1,48 @@
+ {% extends "teachers/base.html" %}
+{% load static %}
+
+{% block style %}
+ <link rel="preload" as="style" href="{% static 'loginstyle.css' %}">
+ <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
+{% endblock style %}
+ 
+{% block title %}
+  <title>login</title>
+{% endblock title %}
+
+ {% block main %}
+ 
+    <main role="main">
+      <section class="ui-section-content">
+        <div class="ui-layout-container">
+      
+          <div class="ui-layout-column-6 ui-layout-column-center">
+              <div class="ui-component-cta ui-layout-flex">
+            <div class="input-container">
+              <input type="email" class="input" placeholder="username">
+            </div>
+               
+      <div class="ui-component-cta ui-layout-flex">
+            <div class="input-container">
+              <input type="password" class="input" placeholder="password">
+            </div>
+            
+    
+   
+            
+          </div>
+       
+   
+             </div>
+          </div>
+        </div>
+ 
+    </main>
+     <a href="#">
+          <span>Login</span>
+          <div class="liquid"></div>
+         
+      </a>
+   {% endblock main %}
+          
+      
